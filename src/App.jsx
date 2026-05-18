@@ -8,7 +8,7 @@ import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import Brands from './components/Brands/Brands';
 import CategorySlider from './components/CategorySlider/CategorySlider';
-import MainSlider from './components/Mainslider/Mainslider';
+import MainSlider from './components/MainSlider/MainSlider';
 import Carts from './components/Carts/Carts';
 import Checkout from './components/Checkout/Checkout';
 import Allorders from './components/Allorders/Allorders'
