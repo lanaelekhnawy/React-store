@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 import * as Yup from 'yup';
 import styles from "./Login.module.css";
-import bgImage from '../../assets/images/sumup-ogxCVsQzOGg-unsplash.jpg';
+import bgImage from '../../assets/Images/sumup-ogxCVsQzOGg-unsplash.jpg';
 import { Link } from "react-router-dom";
 
 export default function Login() {

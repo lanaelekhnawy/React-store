@@ -1,65 +1,12 @@
-/* .registerSection {
-  background-color: #f8fafc;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-}
-
-.cardStylish {
-  border: none !important;
-  border-radius: 20px !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
-}
-
-.registerTitle {
-  color: #198754; 
-  font-weight: 700;
-}
-
-.formControlCustom {
-  border: 1.5px solid #dee2e6 !important;
-  border-radius: 12px !important;
-  transition: all 0.3s ease-in-out !important;
-}
-
-.formControlCustom:focus {
-  border-color: #198754 !important; 
-  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.15) !important; 
-  outline: 0;
-}
-
-
-.formControlCustom:focus + label {
-  color: #198754 !important;
-}
-
-.btnRegister {
-  background-color: #198754 !important;
-  border: none !important;
-  border-radius: 12px !important;
-  padding: 12px !important;
-  font-weight: 600 !important;
-  transition: all 0.3s ease !important;
-}
-
-.btnRegister:hover {
-  background-color: #146c43 !important;
-  transform: translateY(-1px);
-} */
-
-
-
 .authPage {
-    /* جعلها تأخذ الشاشة بالكامل بصرف النظر عن أي شيء حولها */
-   position: fixed; /* تغيير هام: يجعلها خلفية ثابتة للشاشة كلها */
+
+   position: fixed; 
     top: 0;
     left: 0;
-    width: 100vw; /* عرض الشاشة بالكامل */
-    height: 100vh; /* طول الشاشة بالكامل */
+    width: 100vw; 
+    height: 100vh; 
   
-    
-    /* ضبط الصورة */
+
     background-size: cover !important; 
     background-position: center center;
     background-repeat: no-repeat;
@@ -70,7 +17,7 @@
 }
 
 .overlay {
-    /* لأننا جعلنا الـ page ثابتة، الـ overlay يجب أن يملأها */
+    
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4); 
@@ -106,7 +53,7 @@
 }
 
 .inputGroup {
-    margin-bottom: 20px; /* زيادة المسافة لتسجيل رسائل الخطأ */
+    margin-bottom: 20px;
     position: relative;
 }
 
@@ -127,7 +74,7 @@
     box-shadow: 0 0 8px rgba(10, 173, 10, 0.4);
 }
 
-/* تنسيق رسائل الخطأ أسفل الحقول */
+
 .errorMsg {
     color: #ffbaba;
     font-size: 0.75rem;
@@ -177,15 +124,15 @@
 }
 
 
-/* تغيير لون الـ Placeholder لجميع المتصفحات */
+
 .inputGroup input::placeholder {
-    color: rgba(255, 255, 255, 0.7); /* يمكنك وضع أي لون تريده هنا */
-    opacity: 1; /* ضروري لمتصفح Firefox */
+    color: rgba(255, 255, 255, 0.7); 
+    opacity: 1;
 }
 
-/* في حال أردت تغيير اللون عند التركيز (Focus) على الحقل */
+
 .inputGroup input:focus::placeholder {
-    color: #0aad0a; /* يتغير للأخضر عند الضغط على الحقل */
+    color: #0aad0a; 
 }
 
 
