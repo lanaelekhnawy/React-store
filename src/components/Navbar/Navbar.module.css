@@ -1,0 +1,98 @@
+.customNav {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 12px 0;
+}
+
+.navLink {
+    text-decoration: none;
+    color: #4b5563 !important;
+    padding: 8px 15px;
+    font-weight: 500;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.navLink:hover {
+    color: #0aad0a !important;
+}
+
+.activeLink {
+    text-decoration: none;
+    color: #0aad0a !important;
+    padding: 8px 15px;
+    font-weight: 600;
+    position: relative;
+}
+
+.activeLink::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    height: 2px;
+    background: #0aad0a;
+    border-radius: 2px;
+}
+
+.cartBadge {
+    position: absolute;
+    top: -5px;
+    right: -2px;
+    background: #0aad0a;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(10, 173, 10, 0.3);
+}
+
+.authLink {
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 500;
+    padding: 8px 20px;
+}
+
+.registerBtn {
+    text-decoration: none;
+    background: #0aad0a;
+    color: white !important;
+    padding: 8px 22px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(10, 173, 10, 0.2);
+}
+
+.registerBtn:hover {
+    background: #089608;
+    transform: translateY(-1px);
+}
+
+.logoutBtn {
+    cursor: pointer;
+    color: #dc3545;
+    font-weight: 500;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+.logoutBtn:hover {
+    color: #bb2d3b;
+}
+
+.socialIcons i {
+    font-size: 1.1rem;
+    color: #6b7280;
+    margin: 0 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.socialIcons i:hover {
+    color: #0aad0a;
+}

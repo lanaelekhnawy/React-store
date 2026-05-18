@@ -1,0 +1,99 @@
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.product-card img {
+  transition: transform 0.5s ease;
+  height: 250px;
+  object-fit: contain;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+
+
+.hover-effect {
+  transition: all 0.3s ease;
+}
+
+.hover-effect:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(25, 135, 84, 0.2) !important;
+  background-color: #157347 !important;
+}
+
+.product-image-container {
+  border: 1px solid #f0f0f0;
+  transition: border-color 0.3s ease;
+}
+
+.product-image-container:hover {
+  border-color: #198754;
+}
+
+.fw-extrabold {
+  font-weight: 800;
+}
+category-img{
+width: 100%;
+height: 200px;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.min-vh-75 {
+  min-height: 75vh;
+}
+
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+.animate-pulse {
+  animation: pulse 3s infinite ease-in-out;
+}
+
+.brand-card {
+    transition: transform 0.3s ease, shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.brand-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+    border: 1px solid #198754 !important; /* لون success */
+}
+
+.hover-shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+  transition: all 0.3s ease;
+}
+
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    display: none !important;
+}
+
+
+.swiper-pagination-bullet-active {
+    background-color: #198754 !important; 
+    width: 25px !important; 
+    border-radius: 5px !important;
+}

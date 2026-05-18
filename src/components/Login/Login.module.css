@@ -1,0 +1,213 @@
+/* .registerSection {
+  background-color: #f8fafc;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.cardStylish {
+  border: none !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+}
+
+.registerTitle {
+  color: #198754; 
+  font-weight: 700;
+}
+
+.formControlCustom {
+  border: 1.5px solid #dee2e6 !important;
+  border-radius: 12px !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.formControlCustom:focus {
+  border-color: #198754 !important; 
+  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.15) !important; 
+  outline: 0;
+}
+
+
+.formControlCustom:focus + label {
+  color: #198754 !important;
+}
+
+.btnRegister {
+  background-color: #198754 !important;
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 12px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+.btnRegister:hover {
+  background-color: #146c43 !important;
+  transform: translateY(-1px);
+} */
+
+
+
+.authPage {
+    /* جعلها تأخذ الشاشة بالكامل بصرف النظر عن أي شيء حولها */
+   position: fixed; /* تغيير هام: يجعلها خلفية ثابتة للشاشة كلها */
+    top: 0;
+    left: 0;
+    width: 100vw; /* عرض الشاشة بالكامل */
+    height: 100vh; /* طول الشاشة بالكامل */
+  
+    
+    /* ضبط الصورة */
+    background-size: cover !important; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    /* لأننا جعلنا الـ page ثابتة، الـ overlay يجب أن يملأها */
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.glassContainer {
+    width: 100%;
+    max-width: 480px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    padding: 30px 40px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+}
+
+.mainTitle {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+.subTitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.inputGroup {
+    margin-bottom: 20px; /* زيادة المسافة لتسجيل رسائل الخطأ */
+    position: relative;
+}
+
+.inputGroup input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 12px 15px;
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+.inputGroup input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #0aad0a;
+    box-shadow: 0 0 8px rgba(10, 173, 10, 0.4);
+}
+
+/* تنسيق رسائل الخطأ أسفل الحقول */
+.errorMsg {
+    color: #ffbaba;
+    font-size: 0.75rem;
+    margin: 4px 0 0 5px;
+    font-weight: 500;
+}
+
+.errorBorder {
+    border-color: #ff4d4d !important;
+    background: rgba(255, 77, 77, 0.1) !important;
+}
+
+.submitBtn {
+    width: 100%;
+    background: #0aad0a;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submitBtn:hover:not(:disabled) {
+    background: #089608;
+    transform: translateY(-2px);
+}
+
+.submitBtn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.footerText {
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.footerText a {
+    color: #0aad0a; 
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+/* تغيير لون الـ Placeholder لجميع المتصفحات */
+.inputGroup input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* يمكنك وضع أي لون تريده هنا */
+    opacity: 1; /* ضروري لمتصفح Firefox */
+}
+
+/* في حال أردت تغيير اللون عند التركيز (Focus) على الحقل */
+.inputGroup input:focus::placeholder {
+    color: #0aad0a; /* يتغير للأخضر عند الضغط على الحقل */
+}
+
+
+.footerText {
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+
+.footerText a {
+    color: #183808;         
+    text-decoration: none;  
+    font-weight: 700;      
+    font-size: 1.1rem;   
+    margin-left: 5px;     
+    transition: 0.3s;       
+}
+
+
+.footerText a:hover {
+    color: #187518;      
+    text-decoration: underline; 
+}
