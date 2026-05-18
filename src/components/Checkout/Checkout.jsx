@@ -1,7 +1,7 @@
 import axios from "axios";
 import React from "react";
 import { useParams } from "react-router-dom";
-import { useFormik } from "formik"; // يفضل استخدام formik للسهولة
+import { useFormik } from "formik"; 
 
 export default function Checkout() {
     let { cartId } = useParams();
@@ -12,7 +12,7 @@ export default function Checkout() {
 
     async function handleCheckout(formsData) {
         try {
-            // لاحظ استخدام الباك-تيك ` هنا
+       
             let { data } = await axios.post(
                 `https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}`,
                 { 
@@ -20,7 +20,8 @@ export default function Checkout() {
                 },
                 {
                     headers: headers,
-                    params: { url: 'http://localhost:5173' } 
+                  
+                    params: { url: 'https://react-store-upx5.vercel.app' }
                 }
             );
 
