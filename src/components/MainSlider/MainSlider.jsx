@@ -7,9 +7,9 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
 
-import img1 from '../../assets/Images/slider-image-1.jpeg';
-import img2 from '../../assets/Images/slider-image-2.jpeg';
-import img3 from '../../assets/Images/slider-image-3.jpeg';
+import img1 from '../../assets/images/slider-image-1.jpeg';
+import img2 from '../../assets/images/slider-image-2.jpeg';
+import img3 from '../../assets/images/slider-image-3.jpeg';
 
 export default function MainSlider() {
   const slides = [

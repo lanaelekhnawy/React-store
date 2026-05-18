@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import errorImg from '../../assets/Images/error.svg'; 
+import errorImg from '../../assets/images/error.svg'; 
 
 export default function NotFound() {
   return (

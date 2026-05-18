@@ -4,7 +4,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import { userContext } from "../../Context/UserContext";
 import axios from "axios";
 import * as Yup from 'yup';
-import bgImage from '../../assets/Images/sumup-ogxCVsQzOGg-unsplash.jpg';
+import bgImage from '../../assets/images/sumup-ogxCVsQzOGg-unsplash.jpg';
 import styles from "./Register.module.css";
 
 
