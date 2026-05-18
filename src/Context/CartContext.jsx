@@ -1,6 +1,6 @@
 import axios from "axios";
 import { createContext, useState } from "react";
-
+import PropTypes from "prop-types";
 export let CartContext = createContext();
 
 export default function CartContextProvider(props) {
