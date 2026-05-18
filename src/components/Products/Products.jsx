@@ -2,7 +2,7 @@ import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../../Context/CartContext";
 import CategorySlider from "../CategorySlider/CategorySlider";
-import MainSlider from "../Mainslider/MainSlider";
+import MainSlider from "../MainSlider/MainSlider";
 import toast from "react-hot-toast";
 import { Circles } from "react-loader-spinner";
 import { Link } from "react-router-dom";
